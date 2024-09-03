@@ -147,7 +147,7 @@ const Navigation = () => {
             options={{ headerShown: false,presentation:'fullscreenModal' }}
           />
           <Stack.Screen 
-            name="AddChat"
+            name="AdToChatScreen"
             component={AdToChatScreen}
           />
 
