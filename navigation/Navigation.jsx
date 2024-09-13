@@ -37,6 +37,7 @@ import AsyncStorage from "@react-native-async-storage/async-storage";
 import AdsScreen from "../screens/AdsScreen";
 import ChatScreen from "../screens/ChatScreen";
 import AdToChatScreen from "../screens/AdToChatScreen";
+import SingleChatRoom from "../screens/SingleChatRoom";
 
 const Stack = createNativeStackNavigator();
 const Tab = createBottomTabNavigator();
@@ -149,8 +150,13 @@ const Navigation = () => {
           <Stack.Screen 
             name="AdToChatScreen"
             component={AdToChatScreen}
+            options={{ headerShown: false }}
           />
-
+          <Stack.Screen 
+            name="SingleChatRoom"
+            component={SingleChatRoom}
+            options={{ headerShown: false }}
+          />         
         </Stack.Navigator>
       </CurrencyProvider> 
     </NavigationContainer>
